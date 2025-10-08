@@ -25,3 +25,23 @@ Official implementation of **LogicGraphNet**, a compact neural theorem prover th
 3. Applying corrections through gated updates
 4. Looking ahead to evaluate recovery paths before committing
 
+
+## 📊 Performance Comparison
+
+| Model | Success Rate | Parameters | Inference Time | Generalization (Novel) |
+|-------|-------------|------------|----------------|----------------------|
+| **LogicGraphNet** | **65.0%** | **1.98M** | **0.047s** | **71.2%** ✨ |
+| LLM (Galactica-125M) | 67.0% | 125M | 0.658s | 66.7% |
+| Neural Search | 29.5% | 0.97M | 0.041s | 37.9% |
+
+✨ *LogicGraphNet improves on novel problems—a rare property showing true reasoning*
+
+## 📄 Citation
+```bibtex
+@article{sleem2025failing,
+  title={Failing Forward: How Analyzing Mistakes Creates More Efficient and Robust AI Theorem Provers},
+  author={Sleem, Ahmed and Adly, Nihal Ahmed},
+  journal={arXiv preprint arXiv:2025.xxxxx},
+  year={2025}
+}
+```
